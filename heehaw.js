@@ -14,4 +14,9 @@ for (let i = 1; i < max; i++)
     {
         console.log("Haw");
     }
+    else
+    {
+        let num = i.toString();
+        console.log(num);
+    }
 }
