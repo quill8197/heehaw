@@ -1,6 +1,6 @@
 const max = 100;
 
-for (let i = 1; i < max; i++)
+for (let i = 1; i <= max; i++)
 {
     if (i % 3 === 0 && i % 5 === 0)
     {
@@ -16,7 +16,6 @@ for (let i = 1; i < max; i++)
     }
     else
     {
-        let num = i.toString();
-        console.log(num);
+        console.log(i.toString());
     }
 }
