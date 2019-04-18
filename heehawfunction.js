@@ -1,50 +1,19 @@
 function heeHaw($max)
 {
-    console.log($max + ' ' + typeof($max));
     if (typeof($max) === 'number')
     {
         if ($max <= 0) //if negative or 0
         {
             for (let i = 1; i >= $max; i--)
             {
-                if (i % 3 === 0 && i % 5 === 0)
-                {
-                    console.log("Hee Haw");
-                }
-                else if (i % 3 === 0)
-                {
-                    console.log("Hee");
-                }
-                else if (i % 5 === 0)
-                {
-                    console.log("Haw");
-                }
-                else
-                {
-                    console.log(i.toString());
-                }
+                printHeeHaw(i);
             }
         }
         else //if positive
         {
             for (let i = 1; i <= $max; i++)
             {
-                if (i % 3 === 0 && i % 5 === 0)
-                {
-                    console.log("Hee Haw");
-                }
-                else if (i % 3 === 0)
-                {
-                    console.log("Hee");
-                }
-                else if (i % 5 === 0)
-                {
-                    console.log("Haw");
-                }
-                else
-                {
-                    console.log(i.toString());
-                }
+                printHeeHaw(i);
             }
         }
     }
@@ -54,6 +23,26 @@ function heeHaw($max)
     }
 }
 
-//heeHaw(5);
+function printHeeHaw($number)
+{
+    if ($number % 3 === 0 && $number % 5 === 0)
+    {
+        console.log("Hee Haw");
+    }
+    else if ($number % 3 === 0)
+    {
+        console.log("Hee");
+    }
+    else if ($number % 5 === 0)
+    {
+        console.log("Haw");
+    }
+    else
+    {
+        console.log($number.toString());
+    }
+}
+
+heeHaw(5);
 //heeHaw('six');
-heeHaw(-5);
+//heeHaw(-5);
