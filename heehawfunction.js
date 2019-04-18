@@ -1,25 +1,50 @@
 function heeHaw($max)
 {
     console.log($max + ' ' + typeof($max));
-    if (typeof($max) === 'number') //Number.isInteger($max)
+    if (typeof($max) === 'number')
     {
-        for (let i = 1; i <= $max; i++)
+        if ($max <= 0) //if negative or 0
         {
-            if (i % 3 === 0 && i % 5 === 0)
+            for (let i = 1; i >= $max; i--)
             {
-                console.log("Hee Haw");
+                if (i % 3 === 0 && i % 5 === 0)
+                {
+                    console.log("Hee Haw");
+                }
+                else if (i % 3 === 0)
+                {
+                    console.log("Hee");
+                }
+                else if (i % 5 === 0)
+                {
+                    console.log("Haw");
+                }
+                else
+                {
+                    console.log(i.toString());
+                }
             }
-            else if (i % 3 === 0)
+        }
+        else //if positive
+        {
+            for (let i = 1; i <= $max; i++)
             {
-                console.log("Hee");
-            }
-            else if (i % 5 === 0)
-            {
-                console.log("Haw");
-            }
-            else
-            {
-                console.log(i.toString());
+                if (i % 3 === 0 && i % 5 === 0)
+                {
+                    console.log("Hee Haw");
+                }
+                else if (i % 3 === 0)
+                {
+                    console.log("Hee");
+                }
+                else if (i % 5 === 0)
+                {
+                    console.log("Haw");
+                }
+                else
+                {
+                    console.log(i.toString());
+                }
             }
         }
     }
