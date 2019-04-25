@@ -38,4 +38,11 @@ function groupByType(array)
 let input = [ -1, 5, "cat", false, 10.2, true, "dog" ];
 
 let object = groupByType(input);
-console.log(object);
+
+function writeResults()
+{
+    document.write("<h1>This is the result of my function:</h1>");
+    document.write("<p>Strings: " + object.strings.toString() + "</p>");
+    document.write("<p>Numbers: " + object.numbers.toString() + "</p>");
+    document.write("<p>Booleans: " + object.booleans.toString() + "</p>");
+}
