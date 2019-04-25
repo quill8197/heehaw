@@ -1,19 +1,5 @@
 function groupByType(array)
 {
-    /*
-    let objectA = {a: 1, b: 2};
-    Object.assign(objectA, {b: 3, c: 4});
-    console.log(objectA);
-    // → {a: 1, b: 3, c: 4}
-
-    function addEntry(events, squirrel)
-    {
-      journal.push({events, squirrel});
-    }
-
-    addEntry(["work", "touched tree", "pizza", "running",
-          "television"], false);
-    */
     //create arrays to track strings, numbers, and booleans
     let strings = [];
     let numbers = [];
