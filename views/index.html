@@ -3,29 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Hee Haw</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
 </head>
 <body>
-    <script src="../model/heehaw.js"></script>
-    <form>
+    <div>
         <h1>Hee Haw!</h1>
-        <label>
-            Enter a number
-            <input type="text">
+        <label>Enter a number
+            <input type="text" id="number">
         </label>
+
         <button id="go">Go</button>
-        <div id="result">
-        </div>
-    </form>
+        <div id="result"></div>
+    </div>
 
     <script>
         //grab the button
-        let btn = document.getElementById("go");
+        let btn = document.getElementById('go');
         btn.onclick = heehaw;
+
+        //Get the text box
+        let txt = document.getElementById('number');
+
+        //Get the output div
+        let output = document.getElementById('result');
 
         function heehaw()
         {
-            alert("Ouch!");
+            //Get the value of the text box
+            let val = txt.value;
+
+            //Display the output
+            output.innerHTML = val;
         }
     </script>
+
+    <script src="../model/heehaw.js"></script>
+    <div id="output"></div>
 </body>
 </html>
